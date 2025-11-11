@@ -20,14 +20,13 @@
     - [Prerequisites](#prerequisites)
     - [Installation](#installation)
       - [Method 1: Clone from GitHub (Recommended)](#method-1-clone-from-github-recommended)
-      - [Method 3: Download ZIP](#method-3-download-zip)
+      - [Method 2: Download ZIP](#method-2-download-zip)
   - [⚙️ Usage Examples](#️-usage-examples)
     - [Quick Start](#quick-start)
       - [JSON-Only Output for API Integration](#json-only-output-for-api-integration)
     - [Command-Line Options](#command-line-options)
     - [Core Functions](#core-functions)
     - [Architecture Overview](#architecture-overview)
-  - [](#)
   - [🤝 Contributing](#-contributing)
     - [How to Contribute](#how-to-contribute)
     - [Development Setup](#development-setup)
@@ -107,7 +106,7 @@ cd xcp-data-extraction
 pip install -r requirements.txt
 ```
 
-#### Method 3: Download ZIP
+#### Method 2: Download ZIP
 
 1. Download the latest release from [Releases](https://github.com/yourusername/xcp-data-extraction/releases)
 2. Extract the ZIP file
@@ -224,7 +223,7 @@ def all_data(output_name, file_systems, filers, mountpoints,
 - **Flexible Output**: `data_to_file()` handles both CSV and JSON serialization
 
 ### Architecture Overview
-<div align="center">
+
 ```
                     ┌─────────────────────┐
                     │  XCP Scan Report    │
@@ -255,7 +254,6 @@ def all_data(output_name, file_systems, filers, mountpoints,
                     │  CSV + JSON         │
                     └─────────────────────┘
 ```
-</div>
 ---
 
 ## 🤝 Contributing
